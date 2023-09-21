@@ -1,0 +1,14 @@
+<div
+  class="book-item"
+  *ngFor="let book of books; let index = index"
+>
+
+<div>
+    <span>{{index+1}}. <b>{{book.volumeInfo.title}}</b></span><span> by {{book.volumeInfo.authors}}</span>
+
+</div>
+  <!-- <button
+    (click)="add.emit(book.id)"
+    data-test="add-button"
+  >Add to Collection</button> -->
+</div>
