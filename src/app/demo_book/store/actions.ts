@@ -1,5 +1,5 @@
 import { createAction, props } from '@ngrx/store';
-import { BookModel } from '../core/model';
+import { BookModel } from '../../core/model';
 
 export const getList = createAction('[Book] GET LIST');
 export const getListSuccess = createAction('[Book] GET LIST SUCCESS', props<{ books: BookModel[] }>());

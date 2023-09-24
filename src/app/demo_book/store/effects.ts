@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Actions, createEffect, ofType } from '@ngrx/effects';
 import { catchError, exhaustMap, map, mergeMap, of, switchMap } from 'rxjs';
-import { GoogleBooksService } from '../service/book.service';
+import { GoogleBooksService } from '../../service/book.service';
 import * as BooksActions from "./actions"
 
 @Injectable()
