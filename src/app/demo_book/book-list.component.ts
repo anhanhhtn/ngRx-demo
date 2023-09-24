@@ -26,7 +26,7 @@ export class BookListComponent {
     this.store.dispatch(BooksActions.removeBook({ bookId }));
   }
 
-  
+
   ngOnInit() {
         this.booksService
       .getBooks()
@@ -35,7 +35,6 @@ export class BookListComponent {
       );
 
     // this.store.dispatch(BooksActions.getList())
-
     // this.store.select(selectBooks)
     // .pipe(
     //   filter(val => val !== null),
