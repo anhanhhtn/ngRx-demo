@@ -10,7 +10,7 @@ import { StoreModule } from '@ngrx/store';
 import {EffectsModule} from "@ngrx/effects"
 import { booksReducer } from './demo_book/store/reducers';
 import {Effects} from './demo_book/store/effects';
-import { BookListComponent } from './demo_book/book-list.component';
+import { BookListComponent } from './demo_book/book-list/book-list.component';
 import { ParentComponent } from './demo_behaivorsubject/parent.component';
 import { SiblingComponent } from './demo_behaivorsubject/sibling.component';
 import { DataService } from './demo_behaivorsubject/data.service';

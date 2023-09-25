@@ -1,5 +1,41 @@
 <div
   class="book-item"
+  *ngFor="let book of books; let index = index"
+>
+<div>
+    <span>{{index+1}}. <b>{{book.volumeInfo.title}}</b></span><span> by {{book.volumeInfo.authors}}</span>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div
+  class="book-item"
   *ngFor="let book of books$ | async; let index = index"
 >
 <div>
@@ -7,16 +43,7 @@
     
 
 </div>
-</div>
-
-
-
-<!-- <div
-  class="book-item"
-  *ngFor="let book of books; let index = index"
->
-<div>
-    <span>{{index+1}}. <b>{{book.volumeInfo.title}}</b></span><span> by {{book.volumeInfo.authors}}</span>
-
-</div>
 </div> -->
+
+
+
