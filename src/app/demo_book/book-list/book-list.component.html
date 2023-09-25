@@ -1,49 +1,10 @@
 <div
   class="book-item"
-  *ngFor="let book of books; let index = index"
+  *ngFor="let book of books"
 >
-<div>
-    <span>{{index+1}}. <b>{{book.volumeInfo.title}}</b></span><span> by {{book.volumeInfo.authors}}</span>
-
+  <p>{{book.volumeInfo.title}}</p><span> by {{book.volumeInfo.authors}}</span>
+  <button
+    (click)="add.emit(book.id)"
+    data-test="add-button"
+  >Add to Collection</button>
 </div>
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <div
-  class="book-item"
-  *ngFor="let book of books$ | async; let index = index"
->
-<div>
-    <span>{{index+1}}. <b>{{book.volumeInfo.title}}</b></span><span> by {{book.volumeInfo.authors}}</span>
-    
-
-</div>
-</div> -->
-
-
-

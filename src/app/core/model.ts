@@ -1,5 +1,5 @@
 export interface BookModel {
-    id: number;
+    id: string;
     volumeInfo: {
       title: string;
       authors: Array<string>;
